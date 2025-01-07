@@ -1701,7 +1701,7 @@ SELECT
         ELSE "OK"
     END AS critica
 FROM mapeamento_tabelas m
-LEFT JOIN calculadora c ON c.tabelas = t.tabelas
+LEFT JOIN calculadora c ON c.tabelas = m.tabelas
 ORDER BY critica ASC
 
 
